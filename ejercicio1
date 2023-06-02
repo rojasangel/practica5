@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include "misfunciones.h"
+
+int sumar_entero(int x,int y);
+int restar_entero(int x,int y);
+
+
+int main(){
+	
+	
+	int x,y,res,sum,total;
+	
+	
+	
+	
+	do{
+		
+		
+		printf("ingrese 2 numeros");
+		scanf("%d %d",&x,&y);
+
+    sum=sumar_entero(x, y);
+    res=restar_entero( x ,y);
+		
+		printf("La suma de %d y %d  es= %d",x,y,sum);	
+    printf("\n");
+    printf("La resta de %d y %d es= %d",x,y,res);	
+printf("\n");
+printf("\n");
+    
+	}while(x!=0 && y!=0);
+	printf("Saliste....\n");
+	
+
+	return 0;
+}
